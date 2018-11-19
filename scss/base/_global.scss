@@ -1,0 +1,36 @@
+::selection {
+  background-color: $c-gray;
+  color: #fff;
+}
+
+
+
+.container {
+  padding-left:  15px !important;
+  padding-right: 15px !important;
+}
+
+
+section {
+  padding: 80px 0;
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+
+
+// define max container width here
+@media (min-width: 1788px) {
+  .container {
+    width: 1200px;
+    max-width: none;
+
+    &--blog {
+      width: 1600px;
+    }
+  }
+}

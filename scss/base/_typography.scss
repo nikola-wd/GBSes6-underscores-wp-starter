@@ -1,0 +1,77 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font-def;
+	color: #000;
+	text-transform: capitalize;
+}
+
+p {
+	font-family: $font-sec;
+	font-size: 18px;
+  line-height: 1.78;
+  color: $c-txt;
+  margin-bottom: 0;
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 60px;
+	line-height: 1.3;
+	color: #fff;
+	margin-bottom: 65px;
+}
+
+h2 {
+	display: inline-block;
+	font-size: 42px;
+	margin-bottom: 125px;
+}
+
+h3 {
+	font-size: 30px;
+	margin-bottom: 28px;
+}
+
+h4 {
+	font-size: 26px;
+	margin-bottom: 25px !important;
+}
+
+a:not(.btn) {
+	color: $c-brand;
+}
+
+
+@media (max-width: 1199px) {
+	h1 {
+		font-size: 52px;
+		margin-bottom: 45px;
+	}
+}
+
+
+@media (max-width: 991px) {
+	h1 {
+		font-size: 34px;
+		margin-bottom: 30px;
+	}
+
+	h2 {
+		font-size: 28px;
+		margin-bottom: 22px;
+	}
+
+	h3 {
+		font-size: 24px;
+		margin-bottom: 18px;
+	}
+
+	h4 {
+		font-size: 20px;
+		margin-bottom: 15px !important;
+	}
+}

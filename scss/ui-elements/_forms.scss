@@ -1,0 +1,34 @@
+.form-control {
+  border-radius: 25px/7px;
+  height: 37px;
+  text-align: center;
+  border-color: #a19d94;
+  font-family: $font-sec;
+  font-size: 20px;
+  color: $c-txt;
+
+  &::placeholder {
+    color: #a19d94;
+  }
+}
+
+
+.mc4wp-response {
+
+  > div {
+    padding: 4px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-family: $font-sec;
+    font-weight: 600;
+    color: #fff;
+
+    &.mc4wp-error   { background: crimson; }
+    &.mc4wp-success { background: #6cc56c; }
+  }
+
+  p { margin: 0; }
+}

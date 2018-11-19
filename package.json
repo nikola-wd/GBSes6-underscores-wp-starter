@@ -1,0 +1,28 @@
+{
+  "name": "underscores-GS",
+  "author": "Nikola Ivanov",
+  "version": "1.0.4",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nikola-wd/underscores-gs"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-bro": "^1.0.3",
+    "gulp-filter": "^4.0.0",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6"
+  }
+}

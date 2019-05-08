@@ -29,8 +29,8 @@
 
 // START Editing Project Variables.
 // Project related.
-var project = 'date'; // Project Name.
-var projectURL = 'localhost/date'; // Local project URL of your already running WordPress site. Could be something like local.dev or localhost:8888.
+var project = 'theme_folder'; // Project Name.
+var projectURL = 'localhost/theme_folder'; // Local project URL of your already running WordPress site. Could be something like local.dev or localhost:8888.
 var productURL = './'; // Theme/Plugin URL. Leave it like it is, since our gulpfile.js lives in the root folder.
 
 
@@ -167,10 +167,26 @@ gulp.task('styles', function () {
 
     .pipe(filter('**/*.css')) // Filtering stream to only css files
     .pipe(browserSync.stream()) // Reloads style.min.css if that is enqueued.
-    .pipe(notify({
-      message: 'TASK: "styles" Completed! 💯',
-      onLast: true
-    }))
+    // .pipe(notify({
+    //   message: 'TASK: "styles" Completed! 💯',
+    //   onLast: true
+    // }))
+});
+
+
+
+
+
+
+// This should be run manually only when all css changes are finished to minify the file
+gulp.task('minifycss', function () {
+  gulp.src('./style.min.css')
+    .pipe(rename('./style.css'))
+    .pipe(gulp.dest(styleDestination))
+    // .pipe(notify({
+    //   message: 'TASK: "Minify CSS" Completed! 💯',
+    //   onLast: true
+    // }))
 });
 
 
@@ -191,10 +207,10 @@ gulp.task('customJS', function() {
     .pipe(lineec())
     .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./js-compiled'))
-    .pipe(notify({
-      message: 'TASK: "customJs" Completed! 💯',
-      onLast: true
-    }));
+    // .pipe(notify({
+    //   message: 'TASK: "customJs" Completed! 💯',
+    //   onLast: true
+    // }));
 });
 
 
